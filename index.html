@@ -593,6 +593,121 @@ document.getElementById("leadForm").addEventListener("submit", async function(ev
     }
 
 });
+<script>
+
+const SCRIPT_URL =
+"https://script.google.com/macros/s/AKfycbx73A8KDTejluE0B0o84mz06edwWEi3DAOtJfymw8yd8VtBqaRetJDKoTjpYMkl_RJr/exec";
+
+const WHATSAPP_NUMBER = "201289122717";
+
+
+const urlParams = new URLSearchParams(window.location.search);
+
+const source =
+    urlParams.get("utm_source") || "Direct";
+
+const campaign =
+    urlParams.get("utm_campaign") || "";
+
+const ad =
+    urlParams.get("utm_content") || "";
+
+
+document.getElementById("leadForm").addEventListener("submit", async function(event) {
+
+    event.preventDefault();
+
+    const button =
+        document.getElementById("submitButton");
+
+    const name =
+        document.getElementById("name").value.trim();
+
+    const phone =
+        document.getElementById("phone").value.trim();
+
+    const service =
+        document.getElementById("service").value;
+
+
+    if (!name || !phone || !service) {
+
+        alert("من فضلك أكمل البيانات.");
+
+        return;
+    }
+
+
+    button.disabled = true;
+
+    button.textContent = "جارٍ إرسال البيانات...";
+
+
+    const leadData = {
+
+        name: name,
+
+        phone: phone,
+
+        service: service,
+
+        source: source,
+
+        campaign: campaign,
+
+        ad: ad
+
+    };
+
+
+    try {
+
+        await fetch(SCRIPT_URL, {
+
+            method: "POST",
+
+            mode: "no-cors",
+
+            headers: {
+                "Content-Type": "text/plain;charset=utf-8"
+            },
+
+            body: JSON.stringify(leadData)
+
+        });
+
+
+        const message =
+            "مرحبًا NOVO Dental\n\n" +
+            "أريد حجز استشارة.\n\n" +
+            "الاسم: " + name + "\n" +
+            "رقم الهاتف: " + phone + "\n" +
+            "الخدمة المطلوبة: " + service;
+
+
+        const whatsappURL =
+            "https://api.whatsapp.com/send?phone=" +
+            WHATSAPP_NUMBER +
+            "&text=" +
+            encodeURIComponent(message);
+
+
+        window.location.href = whatsappURL;
+
+
+    } catch (error) {
+
+        console.error(error);
+
+        alert("حدث خطأ أثناء إرسال البيانات.");
+
+        button.disabled = false;
+
+        button.textContent = "احجز عبر WhatsApp";
+
+    }
+
+});
 
 </script>
 
