@@ -101,7 +101,7 @@
             padding: 25px;
             border-radius: 12px;
             text-align: center;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
         }
 
         .service-icon {
@@ -143,7 +143,7 @@
             background: white;
             padding: 30px;
             border-radius: 14px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.06);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
         }
 
         .form-group {
@@ -209,12 +209,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 25px;
+            font-size: 15px;
+            font-weight: bold;
             z-index: 1000;
         }
 
         @media (max-width: 700px) {
-
             h1 {
                 font-size: 32px;
             }
@@ -238,479 +238,438 @@
     </style>
 </head>
 
-
 <body>
 
+    <!-- Hero -->
+    <section class="hero">
 
-<section class="hero">
+        <div class="logo">
+            NOVO Dental
+        </div>
 
-    <div class="logo">
-        NOVO Dental
-    </div>
+        <div class="small-title">
+            عيادة أسنان متخصصة
+        </div>
 
-    <div class="small-title">
-        عيادة أسنان متخصصة
-    </div>
+        <h1>
+            ابتسامتك تبدأ بخطوة واحدة
+        </h1>
 
-    <h1>
-        ابتسامتك تبدأ بخطوة واحدة
-    </h1>
+        <p class="hero-text">
+            احصل على استشارتك وابدأ طريقك نحو ابتسامة أكثر صحة وثقة.
+        </p>
 
-    <p class="hero-text">
-        احصل على استشارتك وابدأ طريقك نحو ابتسامة أكثر صحة وثقة.
-    </p>
+        <a href="#booking" class="whatsapp-btn">
+            احجز استشارتك الآن
+        </a>
 
-    <a href="#booking" class="whatsapp-btn">
-        احجز استشارتك الآن
+    </section>
+
+
+    <!-- Services -->
+    <section class="section">
+
+        <h2 class="section-title">
+            خدماتنا
+        </h2>
+
+        <p class="section-description">
+            حلول للعناية بابتسامتك
+        </p>
+
+        <div class="services">
+
+            <div class="service">
+                <div class="service-icon">🦷</div>
+                <h3>تنظيف الأسنان</h3>
+                <p>عناية بالأسنان للحفاظ على النظافة والصحة.</p>
+            </div>
+
+            <div class="service">
+                <div class="service-icon">✨</div>
+                <h3>تبييض الأسنان</h3>
+                <p>تعرف على الخيارات المناسبة لتبييض الأسنان.</p>
+            </div>
+
+            <div class="service">
+                <div class="service-icon">😁</div>
+                <h3>تجميل الأسنان</h3>
+                <p>خيارات لتحسين مظهر الابتسامة.</p>
+            </div>
+
+            <div class="service">
+                <div class="service-icon">🩺</div>
+                <h3>فحص الأسنان</h3>
+                <p>فحص واستشارة لمعرفة احتياجات أسنانك.</p>
+            </div>
+
+            <div class="service">
+                <div class="service-icon">🦷</div>
+                <h3>علاج الأسنان</h3>
+                <p>تقييم الحالة ووضع خطة علاج مع الطبيب.</p>
+            </div>
+
+            <div class="service">
+                <div class="service-icon">👨‍⚕️</div>
+                <h3>استشارة طبية</h3>
+                <p>تحدث مع فريق العيادة لمعرفة الخدمة المناسبة.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Trust -->
+    <section class="section trust">
+
+        <h2 class="section-title">
+            لماذا NOVO Dental؟
+        </h2>
+
+        <p class="section-description">
+            نهتم بتجربة المريض من أول خطوة
+        </p>
+
+        <div class="trust-grid">
+
+            <div class="trust-item">
+                <h3>✓ استشارة قبل العلاج</h3>
+                <p>تعرف على احتياجاتك وخيارات العلاج قبل اتخاذ القرار.</p>
+            </div>
+
+            <div class="trust-item">
+                <h3>✓ اهتمام بالتفاصيل</h3>
+                <p>تجربة منظمة للمريض من الحجز حتى الاستشارة.</p>
+            </div>
+
+            <div class="trust-item">
+                <h3>✓ خدمات متنوعة</h3>
+                <p>مجموعة من خدمات الأسنان في مكان واحد.</p>
+            </div>
+
+            <div class="trust-item">
+                <h3>✓ حجز سهل</h3>
+                <p>أرسل بياناتك وسيتم التواصل معك لتنسيق الموعد.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Booking -->
+    <section class="section booking" id="booking">
+
+        <h2 class="section-title">
+            احجز استشارتك
+        </h2>
+
+        <p class="section-description">
+            اترك بياناتك وسنتواصل معك لتأكيد الموعد.
+        </p>
+
+        <div class="form-box">
+
+            <form id="leadForm">
+
+                <div class="form-group">
+                    <label for="name">
+                        الاسم
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="اكتب اسمك"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="phone">
+                        رقم الهاتف
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="01xxxxxxxxx"
+                        autocomplete="tel"
+                        inputmode="tel"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="service">
+                        الخدمة المطلوبة
+                    </label>
+
+                    <select id="service" required>
+
+                        <option value="">
+                            اختر الخدمة
+                        </option>
+
+                        <option value="تنظيف الأسنان">
+                            تنظيف الأسنان
+                        </option>
+
+                        <option value="تبييض الأسنان">
+                            تبييض الأسنان
+                        </option>
+
+                        <option value="تجميل الأسنان">
+                            تجميل الأسنان
+                        </option>
+
+                        <option value="فحص الأسنان">
+                            فحص الأسنان
+                        </option>
+
+                        <option value="علاج الأسنان">
+                            علاج الأسنان
+                        </option>
+
+                        <option value="استشارة طبية">
+                            استشارة طبية
+                        </option>
+
+                    </select>
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="form-button"
+                    id="submitButton">
+
+                    احجز عبر WhatsApp
+
+                </button>
+
+
+                <p class="form-note">
+                    سيتم تسجيل بيانات الحجز ثم فتح WhatsApp.
+                </p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>NOVO Dental</p>
+
+        <p>
+            صفحة تدريبية ضمن مشروع ATHAR Leads
+        </p>
+
+        <p>
+            © 2026 جميع الحقوق محفوظة
+        </p>
+
+    </footer>
+
+
+    <!-- Floating WhatsApp -->
+    <a
+        class="floating-whatsapp"
+        href="https://api.whatsapp.com/send?phone=201289122717"
+        target="_blank"
+        rel="noopener">
+
+        WhatsApp
+
     </a>
 
-</section>
 
+    <!-- Lead Tracking + Google Sheets + WhatsApp -->
+    <script>
 
+        const SCRIPT_URL =
+        "https://script.google.com/macros/s/AKfycbx73A8KDTejluE0B0o84mz06edwWEi3DAOtJfymw8yd8VtBqaRetJDKoTjpYMkl_RJr/exec";
 
-<section class="section">
+        const WHATSAPP_NUMBER =
+        "201289122717";
 
-    <h2 class="section-title">
-        خدماتنا
-    </h2>
 
-    <p class="section-description">
-        حلول للعناية بابتسامتك
-    </p>
+        /*
+         * قراءة بيانات الحملة من رابط الصفحة
+         *
+         * مثال:
+         * ?utm_source=facebook
+         * &utm_campaign=dental_whitening
+         * &utm_content=ad01
+         */
 
-    <div class="services">
+        const urlParams =
+            new URLSearchParams(window.location.search);
 
-        <div class="service">
-            <div class="service-icon">🦷</div>
-            <h3>تنظيف الأسنان</h3>
-            <p>عناية بالأسنان للحفاظ على النظافة والصحة.</p>
-        </div>
+        const source =
+            urlParams.get("utm_source") || "Direct";
 
-        <div class="service">
-            <div class="service-icon">✨</div>
-            <h3>تبييض الأسنان</h3>
-            <p>تعرف على الخيارات المناسبة لتبييض الأسنان.</p>
-        </div>
+        const campaign =
+            urlParams.get("utm_campaign") || "";
 
-        <div class="service">
-            <div class="service-icon">😁</div>
-            <h3>تجميل الأسنان</h3>
-            <p>خيارات لتحسين مظهر الابتسامة.</p>
-        </div>
+        const ad =
+            urlParams.get("utm_content") || "";
 
-        <div class="service">
-            <div class="service-icon">🩺</div>
-            <h3>فحص الأسنان</h3>
-            <p>فحص واستشارة لمعرفة احتياجات أسنانك.</p>
-        </div>
 
-        <div class="service">
-            <div class="service-icon">🦷</div>
-            <h3>علاج الأسنان</h3>
-            <p>تقييم الحالة ووضع خطة علاج مع الطبيب.</p>
-        </div>
+        /*
+         * إرسال الـ Lead
+         */
 
-        <div class="service">
-            <div class="service-icon">👨‍⚕️</div>
-            <h3>استشارة طبية</h3>
-            <p>تحدث مع فريق العيادة لمعرفة الخدمة المناسبة.</p>
-        </div>
+        document
+            .getElementById("leadForm")
+            .addEventListener("submit", async function(event) {
 
-    </div>
+                event.preventDefault();
 
-</section>
 
+                const button =
+                    document.getElementById("submitButton");
 
 
-<section class="section trust">
+                const name =
+                    document.getElementById("name")
+                        .value
+                        .trim();
 
-    <h2 class="section-title">
-        لماذا NOVO Dental؟
-    </h2>
 
-    <p class="section-description">
-        نهتم بتجربة المريض من أول خطوة
-    </p>
+                const phone =
+                    document.getElementById("phone")
+                        .value
+                        .trim();
 
-    <div class="trust-grid">
 
-        <div class="trust-item">
-            <h3>✓ استشارة قبل العلاج</h3>
-            <p>تعرف على احتياجاتك وخيارات العلاج قبل اتخاذ القرار.</p>
-        </div>
+                const service =
+                    document.getElementById("service")
+                        .value;
 
-        <div class="trust-item">
-            <h3>✓ اهتمام بالتفاصيل</h3>
-            <p>تجربة منظمة للمريض من الحجز حتى الاستشارة.</p>
-        </div>
 
-        <div class="trust-item">
-            <h3>✓ خدمات متنوعة</h3>
-            <p>مجموعة من خدمات الأسنان في مكان واحد.</p>
-        </div>
+                /*
+                 * التأكد من اكتمال البيانات
+                 */
 
-        <div class="trust-item">
-            <h3>✓ حجز سهل</h3>
-            <p>أرسل بياناتك وسيتم التواصل معك لتنسيق الموعد.</p>
-        </div>
+                if (!name || !phone || !service) {
 
-    </div>
+                    alert("من فضلك أكمل البيانات.");
 
-</section>
+                    return;
+                }
 
 
+                /*
+                 * تغيير حالة الزر
+                 */
 
-<section class="section booking" id="booking">
+                button.disabled = true;
 
-    <h2 class="section-title">
-        احجز استشارتك
-    </h2>
+                button.textContent =
+                    "جارٍ إرسال البيانات...";
 
-    <p class="section-description">
-        اترك بياناتك وسنتواصل معك لتأكيد الموعد.
-    </p>
 
+                /*
+                 * البيانات التي سيتم إرسالها
+                 * إلى Google Apps Script
+                 */
 
-    <div class="form-box">
+                const leadData = {
 
-        <form id="leadForm">
+                    name: name,
 
-            <div class="form-group">
+                    phone: phone,
 
-                <label for="name">
-                    الاسم
-                </label>
+                    service: service,
 
-                <input
-                    type="text"
-                    id="name"
-                    placeholder="اكتب اسمك"
-                    required
-                >
+                    source: source,
 
-            </div>
+                    campaign: campaign,
 
+                    ad: ad
 
-            <div class="form-group">
+                };
 
-                <label for="phone">
-                    رقم الهاتف
-                </label>
 
-                <input
-                    type="tel"
-                    id="phone"
-                    placeholder="01xxxxxxxxx"
-                    required
-                >
+                try {
 
-            </div>
+                    /*
+                     * إرسال البيانات إلى Google Sheets
+                     */
 
+                    await fetch(SCRIPT_URL, {
 
-            <div class="form-group">
+                        method: "POST",
 
-                <label for="service">
-                    الخدمة المطلوبة
-                </label>
+                        mode: "no-cors",
 
-                <select id="service" required>
+                        headers: {
+                            "Content-Type":
+                                "text/plain;charset=utf-8"
+                        },
 
-                    <option value="">
-                        اختر الخدمة
-                    </option>
+                        body:
+                            JSON.stringify(leadData)
 
-                    <option value="تنظيف الأسنان">
-                        تنظيف الأسنان
-                    </option>
+                    });
 
-                    <option value="تبييض الأسنان">
-                        تبييض الأسنان
-                    </option>
 
-                    <option value="تجميل الأسنان">
-                        تجميل الأسنان
-                    </option>
+                    /*
+                     * تجهيز رسالة WhatsApp
+                     */
 
-                    <option value="فحص الأسنان">
-                        فحص الأسنان
-                    </option>
+                    const message =
+                        "مرحبًا NOVO Dental\n\n" +
+                        "أريد حجز استشارة.\n\n" +
+                        "الاسم: " + name + "\n" +
+                        "رقم الهاتف: " + phone + "\n" +
+                        "الخدمة المطلوبة: " + service;
 
-                    <option value="علاج الأسنان">
-                        علاج الأسنان
-                    </option>
 
-                    <option value="استشارة طبية">
-                        استشارة طبية
-                    </option>
+                    const whatsappURL =
+                        "https://api.whatsapp.com/send?phone=" +
+                        WHATSAPP_NUMBER +
+                        "&text=" +
+                        encodeURIComponent(message);
 
-                </select>
 
-            </div>
+                    /*
+                     * فتح WhatsApp
+                     */
 
+                    window.location.href =
+                        whatsappURL;
 
-            <button
-                type="submit"
-                class="form-button"
-                id="submitButton">
 
-                احجز عبر WhatsApp
+                } catch (error) {
 
-            </button>
+                    console.error(error);
 
+                    alert(
+                        "حدث خطأ أثناء إرسال البيانات. حاول مرة أخرى."
+                    );
 
-            <p class="form-note">
-                سيتم تسجيل بيانات الحجز ثم فتح WhatsApp.
-            </p>
 
-        </form>
+                    button.disabled = false;
 
-    </div>
+                    button.textContent =
+                        "احجز عبر WhatsApp";
 
-</section>
+                }
 
+            });
 
-
-<footer>
-
-    <p>NOVO Dental</p>
-
-    <p>صفحة تجريبية ضمن مشروع ATHAR Leads</p>
-
-    <p>© 2026 جميع الحقوق محفوظة</p>
-
-</footer>
-
-
-
-<a
-    class="floating-whatsapp"
-    href="https://api.whatsapp.com/send?phone=201289122717"
-    target="_blank"
-    rel="noopener">
-
-    WhatsApp
-
-</a>
-
-
-
-<script>
-
-const SCRIPT_URL =
-"https://script.google.com/macros/s/AKfycbx73A8KDTejluE0B0o84mz06edwWEi3DAOtJfymw8yd8VtBqaRetJDKoTjpYMkl_RJr/exec";
-
-const WHATSAPP_NUMBER =
-"201289122717";
-
-
-document.getElementById("leadForm").addEventListener("submit", async function(event) {
-
-    event.preventDefault();
-
-    const button = document.getElementById("submitButton");
-
-    const name =
-        document.getElementById("name").value.trim();
-
-    const phone =
-        document.getElementById("phone").value.trim();
-
-    const service =
-        document.getElementById("service").value;
-
-
-    if (!name || !phone || !service) {
-
-        alert("من فضلك أكمل البيانات.");
-
-        return;
-    }
-
-
-    button.disabled = true;
-
-    button.textContent = "جارٍ إرسال البيانات...";
-
-
-    const leadData = {
-
-        name: name,
-
-        phone: phone,
-
-        service: service,
-
-        source: "ATHAR Leads"
-
-    };
-
-
-    try {
-
-        await fetch(SCRIPT_URL, {
-
-            method: "POST",
-
-            mode: "no-cors",
-
-            headers: {
-                "Content-Type": "text/plain;charset=utf-8"
-            },
-
-            body: JSON.stringify(leadData)
-
-        });
-
-
-        const message =
-            "مرحبًا NOVO Dental\n\n" +
-            "أريد حجز استشارة.\n\n" +
-            "الاسم: " + name + "\n" +
-            "رقم الهاتف: " + phone + "\n" +
-            "الخدمة المطلوبة: " + service;
-
-
-        const whatsappURL =
-            "https://api.whatsapp.com/send?phone=" +
-            WHATSAPP_NUMBER +
-            "&text=" +
-            encodeURIComponent(message);
-
-
-        window.location.href = whatsappURL;
-
-
-    } catch (error) {
-
-        console.error(error);
-
-        alert("حدث خطأ أثناء إرسال البيانات. حاول مرة أخرى.");
-
-        button.disabled = false;
-
-        button.textContent = "احجز عبر WhatsApp";
-
-    }
-
-});
-<script>
-
-const SCRIPT_URL =
-"https://script.google.com/macros/s/AKfycbx73A8KDTejluE0B0o84mz06edwWEi3DAOtJfymw8yd8VtBqaRetJDKoTjpYMkl_RJr/exec";
-
-const WHATSAPP_NUMBER = "201289122717";
-
-
-const urlParams = new URLSearchParams(window.location.search);
-
-const source =
-    urlParams.get("utm_source") || "Direct";
-
-const campaign =
-    urlParams.get("utm_campaign") || "";
-
-const ad =
-    urlParams.get("utm_content") || "";
-
-
-document.getElementById("leadForm").addEventListener("submit", async function(event) {
-
-    event.preventDefault();
-
-    const button =
-        document.getElementById("submitButton");
-
-    const name =
-        document.getElementById("name").value.trim();
-
-    const phone =
-        document.getElementById("phone").value.trim();
-
-    const service =
-        document.getElementById("service").value;
-
-
-    if (!name || !phone || !service) {
-
-        alert("من فضلك أكمل البيانات.");
-
-        return;
-    }
-
-
-    button.disabled = true;
-
-    button.textContent = "جارٍ إرسال البيانات...";
-
-
-    const leadData = {
-
-        name: name,
-
-        phone: phone,
-
-        service: service,
-
-        source: source,
-
-        campaign: campaign,
-
-        ad: ad
-
-    };
-
-
-    try {
-
-        await fetch(SCRIPT_URL, {
-
-            method: "POST",
-
-            mode: "no-cors",
-
-            headers: {
-                "Content-Type": "text/plain;charset=utf-8"
-            },
-
-            body: JSON.stringify(leadData)
-
-        });
-
-
-        const message =
-            "مرحبًا NOVO Dental\n\n" +
-            "أريد حجز استشارة.\n\n" +
-            "الاسم: " + name + "\n" +
-            "رقم الهاتف: " + phone + "\n" +
-            "الخدمة المطلوبة: " + service;
-
-
-        const whatsappURL =
-            "https://api.whatsapp.com/send?phone=" +
-            WHATSAPP_NUMBER +
-            "&text=" +
-            encodeURIComponent(message);
-
-
-        window.location.href = whatsappURL;
-
-
-    } catch (error) {
-
-        console.error(error);
-
-        alert("حدث خطأ أثناء إرسال البيانات.");
-
-        button.disabled = false;
-
-        button.textContent = "احجز عبر WhatsApp";
-
-    }
-
-});
-
-</script>
-
+    </script>
 
 </body>
+
 </html>
